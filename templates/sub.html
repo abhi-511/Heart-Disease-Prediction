@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Page</title>
+</head>
+<body>
+
+
+    <div class="container">
+        
+        <h1 class='header' ><span class="header_font">Heart Disease Prediction</span>
+            
+        </h1>
+    </div>
+
+
+    <center>
+        <h4>Hey, {{ n }} fill the form to check for Heart Disease.</h4>
+        <hr>
+        </center>
+        <center>
+        <form action="{{ url_for('predict') }}" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <label for="age"><b>Age</b></label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter Your Age" name="age" id="age" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="sex"><b>Sex</b></label>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="sex" value="1"> Male
+                        <input type="radio" name="sex" value="0"> Female
+                        </center>
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td>
+                        <label for="cp"><b>Chest Pain Type</b></label>
+                    </td>
+                    <td>
+                        <select name="cp" id="ca">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="trestbps"><b>Resting Blood Pressure</b></label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter Resting Blood Pressure" name="trestbps" id="trestbps" required>
+                    </td>
+                </tr>
+           
+                <tr>
+                    <td>
+                        <label for="chol"><b>Cholestoral</b></label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter Cholestoral" name="chol" id="chol" required>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <label for="fbs"><b>Fasting Blood Sugar</b></label>
+                    </td>
+                    <td>   
+                        <center><input type="radio" name="fbs" value="1"> Yes
+                        <input type="radio" name="fbs" value="0"> No
+                        </center>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="restecg"><b>Electrocardiographic Result</b></label>
+                    </td>
+                    <td>
+                         <input type="number" placeholder="Enter Resting Electrocardiographic Result" name="restecg" id="restecg" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="thalach"><b>Heart Rate<b></label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter Maximum Heart Rate" name="thalach" id="thalach" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="exang"><b>Angina</b></label>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="exang" value="1"> Yes
+                        <input type="radio" name="exang" value="0"> No
+                        </center>
+                    </td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <label for="oldpeak"><b>Oldpeak</b></label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter Oldpeak" name="oldpeak" id="oldpeak" required>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <label for="slope"><b>Slope</b></label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter slope" name="slope" id="slope" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="ca"><b>CA</b></label>
+                    </td>
+                    <td>
+                        <select name="ca" id="ca">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="thal"><b>Thalassemia</b></label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter thalassemia " name="thal" id="thal" required>
+                    </td>
+                    </tr>
+            <p>
+
+            </p>
+            <p>
+
+            </p>
+            </table>
+            <button type="submit" id="subbtn">Submit</button>
+        </form>
+        </center>
+        <footer class='footer'>
+            <p>@2021 Abhijit Gupta</p>
+        </footer>
+
+    <style>
+
+
+
+        .header{
+        padding: 30px;
+        text-align: center;
+        background: #000000;
+        color: white;
+        font-size: 30px;
+        width: 100%;
+        
+        margin:-8px;
+        }
+
+
+        body{
+           
+           text-align: center;
+           margin: 0;
+           padding: 0;
+           width: 100%;
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           position: absolute;
+           overflow-x: hidden;
+       }
+        
+       #subbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        width: 30%;
+        opacity: 0.9;
+        }
+
+    #age {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+    #sex {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+    #trestbps {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+
+    #chol {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+
+    #fbd {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+    #cp{
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    #ca{
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    #excang {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+
+    #oldpeak {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+
+    #slope {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+
+    #thal {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+    #restecg {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+
+    #thalach {
+        border-radius: 14px;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    
+    }
+
+    .footer{     
+            text-align: center;
+            background: #000000;
+            color: white;
+            font-size: 15px;  
+            margin:-8px;
+            margin-top: auto;
+            padding: 0px;
+            bottom: 0;
+            width: 105%;
+           
+    }
+
+    </style>
+
+</body>
+</html>
