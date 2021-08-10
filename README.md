@@ -1,12 +1,10 @@
 # Heart Disease Prediction
 
-
-
-Here's a Data-Analysis project of Human Resource using Power-BI. It has buttons to navigate between different page, like it has all pages button to go directly in all the pages from Landing Page and has Home button in each pages to directly move to the landing page from any page.
+It is a Machine Learning Web App Built Using Flask Deployed on Heroku.
 
 
 # These are some Screenshot of Report.
-<img src="https://github.com/abhi-511/HumanResourceReport/blob/main/SS/LandingPage.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/HumanResourceReport/blob/main/SS/Dashboard.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/HumanResourceReport/blob/main/SS/Breakdown.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/HumanResourceReport/blob/main/SS/SalaryAnalysis.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/HumanResourceReport/blob/main/SS/H&T.png" alt="alt text" height=300 width="500"/>
+<img src="https://github.com/abhi-511/Heart-Disease-Prediction-API/blob/main/Screenshots/S1.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/Heart-Disease-Prediction-API/blob/main/Screenshots/S2.png" alt="alt text" height=600 width="500"/>       <img src="https://github.com/abhi-511/Heart-Disease-Prediction-API/blob/main/Screenshots/S3.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/Heart-Disease-Prediction-API/blob/main/Screenshots/S4.png" alt="alt text" height=300 width="500"/>      
 
 Please do ⭐ the repository, if you like this.😊
 
