@@ -4,5 +4,4 @@ Markupsafe==2.0.1
 numpy==1.21.0
 pandas==1.2.5
 sklearn==0.0
-Werzeug==2.0.1
 gunicorn
