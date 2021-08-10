@@ -17,15 +17,13 @@
         <div class="results">
 			{% if prediction==1 %}
 				<h1><span class='danger' id="danger">Oops!<br></span></h1>
-                <h1>YOU HAVE HEART DISEASE.</h1>
-                <br>
+		<h1>YOU HAVE HEART DISEASE.</h1>
                 <img class="gif" src="{{ url_for('static', filename='danger.gif')}}" alt="danger Image">
 				
 			{% elif prediction==0 %}
 				<h1><span class='safe' id="safe" >Congratulation!<br><br></span></h1>
-                <h1> YOU DON'T HAVE HEART DISEASE.</h1>
-                <img class="gif" src="{{ url_for('static', filename='happy.gif')}}" alt="safe Image">
-			
+                		<h1> YOU DON'T HAVE HEART DISEASE.</h1>
+                		<img class="gif" src="{{ url_for('static', filename='happy.gif')}}" alt="safe Image">
 			{% endif %}
 		</div>
         </form>
