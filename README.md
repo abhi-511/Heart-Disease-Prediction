@@ -4,7 +4,7 @@ It is a Machine Learning Web App Built Using Flask Deployed on Heroku.
 
 
 
-This is a Heart Disease Prediction System Web application. I tired to give a clean and user-friendly interface. It is built using Flask and deployed on Heroku.
+This is a Heart Disease Prediction System Web application. I tried to give a clean and user-friendly interface. It is built using Flask and deployed on Heroku.
 
 
 
