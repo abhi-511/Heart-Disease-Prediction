@@ -49,11 +49,11 @@
                         <label for="cp"><b>Chest Pain Type</b></label>
                     </td>
                     <td>
-                        <select name="cp" id="ca">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                        <select name="cp" id="cp">
+                            <option value="0">Type-1</option>
+                            <option value="1">Type-2</option>
+                            <option value="2">Type-3</option>
+                            <option value="3">Type-4</option>
                         </select>
                     </td>
                 </tr>
@@ -63,7 +63,7 @@
                         <label for="trestbps"><b>Resting Blood Pressure</b></label>
                     </td>
                     <td>
-                        <input type="number" placeholder="Enter Resting Blood Pressure" name="trestbps" id="trestbps" required>
+                        <input type="number" placeholder="Blood Pressure(90-200)" name="trestbps" id="trestbps" required>
                     </td>
                 </tr>
            
@@ -72,7 +72,7 @@
                         <label for="chol"><b>Cholestoral</b></label>
                     </td>
                     <td>
-                        <input type="number" placeholder="Enter Cholestoral" name="chol" id="chol" required>
+                        <input type="number" placeholder="Cholestoral(120-570)" name="chol" id="chol" required>
                     </td>
                 </tr>
         
@@ -92,7 +92,12 @@
                         <label for="restecg"><b>Electrocardiographic Result</b></label>
                     </td>
                     <td>
-                         <input type="number" placeholder="Enter Resting Electrocardiographic Result" name="restecg" id="restecg" required>
+                        <select name="restecg" id="restecg">
+                            <option value="0">Type-1</option>
+                            <option value="1">Type-2</option>
+                            <option value="2">Type-3</option>
+                            
+                        </select>
                     </td>
                 </tr>
 
@@ -101,7 +106,7 @@
                         <label for="thalach"><b>Heart Rate<b></label>
                     </td>
                     <td>
-                        <input type="number" placeholder="Enter Maximum Heart Rate" name="thalach" id="thalach" required>
+                        <input type="number" placeholder="HeartRate(60-220)" name="thalach" id="thalach" required>
                     </td>
                 </tr>
 
@@ -122,7 +127,15 @@
                         <label for="oldpeak"><b>Oldpeak</b></label>
                     </td>
                     <td>
-                        <input type="number" placeholder="Enter Oldpeak" name="oldpeak" id="oldpeak" required>
+                        <select name="oldpeak" id="oldpeak">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
                     </td>
                 </tr>
             
@@ -131,7 +144,11 @@
                         <label for="slope"><b>Slope</b></label>
                     </td>
                     <td>
-                        <input type="number" placeholder="Enter slope" name="slope" id="slope" required>
+                        <select name="slope" id="slope">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>                    
                     </td>
                 </tr>
 
@@ -154,7 +171,12 @@
                         <label for="thal"><b>Thalassemia</b></label>
                     </td>
                     <td>
-                        <input type="number" placeholder="Enter thalassemia " name="thal" id="thal" required>
+                        <select name="thal" id="thal">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
                     </td>
                     </tr>
             <p>
