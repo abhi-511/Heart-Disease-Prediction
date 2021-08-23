@@ -8,11 +8,13 @@ This is a Heart Disease Prediction System Web application. I tried to give a cle
 
 
 
+Checkout the following link to check my deployed model : https://hdpsys.herokuapp.com/
+
+
 # These are some Screenshot Web App.
 <img src="https://github.com/abhi-511/Heart-Disease-Prediction-API/blob/main/Screenshots/S1.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/Heart-Disease-Prediction-API/blob/main/Screenshots/S2.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/Heart-Disease-Prediction-API/blob/main/Screenshots/S3.png" alt="alt text" height=300 width="500"/>       <img src="https://github.com/abhi-511/Heart-Disease-Prediction-API/blob/main/Screenshots/S4.png" alt="alt text" height=300 width="500"/>    
 
 
-Checkout the following link to check my deployed model : https://hdpsys.herokuapp.com/
    
 
 Please do ⭐ the repository, if you like this.😊
